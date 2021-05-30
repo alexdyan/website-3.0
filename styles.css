@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Prata&display=swap');
+
+/* general layout */
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.container {
+    padding: 10%;
+}
+
+
+/* navigation bar */
+/* make this a hamburger menu for mobile */
+nav {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 2%;
+    height: 10vh;
+    background-color: #224c3c;
+    color: white;
+}
+.nav-item {
+    margin: auto 12px;
+    text-decoration: none;
+}
+.nav-item:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+i.fa-audio-description {
+    color: #e4c7a6;
+}
+
+
+/* landing page */
+#landing-page {
+    text-align: center;
+}
+div.main-title {
+    height: 90vh;
+}
+h1.name {
+    margin: 0;
+    position: relative;
+    top: 40%;
+    transform: translate(0, -50%);
+    font-family: 'Prata', serif;
+    font-size: 3rem;
+}
+i.fa-chevron-down {
+    position: absolute;
+    bottom: 5%;
+}
+
+
+/* about */
+#about {
+    background-color: #97a396;
+    color: white;
+    border-radius: 20px;
+}
+h1.section-title {
+    margin: 0;
+    margin-bottom: 10%;
+    font-family: 'Prata', serif;
+    font-size: 2.4rem;
+}
+p, ul {
+    line-height: 1.4;
+}
+
+
+/* skills */
+.frontend, .backend {
+    padding: 2%;
+    border-radius: 10px;
+    color: white;
+}
+.frontend {
+    background: #e4c7a6;
+}
+.backend {
+    background: #927b52;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+li {
+    padding: 2%;
+}
+
+
+/* media queries */
+@media (min-width: 30em) { /* tablet version */
+
+}
+
+@media (min-width: 60em) { /* desktop version */
+    nav-item {
+        margin: auto 24px;
+        font-size: 1.4rem;
+    }
+    h1.name {
+        font-size: 5rem;
+    }
+    h1.section-title {
+        margin-bottom: 5%;
+        font-size: 3rem;
+    }
+    .skill-content { /* side by side toolboxes */
+        display: flex;
+        justify-content: space-between;
+    } 
+    .skill-list {
+        width: 30vw;
+    }
+}
